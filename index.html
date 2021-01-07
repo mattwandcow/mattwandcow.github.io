@@ -19,7 +19,13 @@
         <li>Lesson 01: Course Assignments Portal</li>
     </ul>
     <footer>
-       &copy Matt Wilson | Colorado | <a href='https://www.byui.edu/online'>BYUI Online Learning</a>
+       <p>&copy <span id='copy_year'></span> Matt Wilson | Colorado | <a href='https://www.byui.edu/online'>BYUI Online Learning</a></p>
+       <p id='modified_date'></p>
+       <script>
+        document.getElementById('modified_date').innerHTML = document.lastModified;
+        var dateObject = new Date();
+        document.getElementById('copy_year').innerHTML = dateObject.getFullYear();
+       </script>
     </footer>
 </body>
 
