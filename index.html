@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <title>Matt Wilson</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Assignment portal for Matt Wilson in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="description"
+        content="Assignment portal for Matt Wilson in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/courseAssignmentPortal.css">
+
 
 </head>
 
@@ -14,17 +17,20 @@
     <header>
         <h1>Matt Wilson</h1>
     </header>
-    WDD 230: Assignment Portal
+    <main
+    <h2>WDD 230: Assignment Portal</h2>
     <ul>
         <li>Lesson 01: Course Assignments Portal</li>
+        <li>Lesson 01: Another Sample Assignment</li>
     </ul>
+    </main>
     <footer>
-       <p>&copy <span id='copy_year'></span> Matt Wilson | Colorado | <a href='https://www.byui.edu/online'>BYUI Online Learning</a></p>
+       <p id='copy_year'></span> Matt Wilson | Colorado | <a href='https://www.byui.edu/online'>BYUI Online Learning</a></p>
        <p id='modified_date'></p>
        <script>
         document.getElementById('modified_date').innerHTML = document.lastModified;
         var dateObject = new Date();
-        document.getElementById('copy_year').innerHTML = dateObject.getFullYear();
+        document.getElementById('copy_year').innerHTML = 'Last Modified: ' + dateObject.getFullYear();
        </script>
     </footer>
 </body>
