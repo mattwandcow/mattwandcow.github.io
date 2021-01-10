@@ -1,27 +1,40 @@
 /*general settings*/
+body{
+    background-color: darkslategrey;
+
+}
 header,
 footer {
     color: white;
     background-color: darkorchid;
     border-radius: 10px;
     padding: 7px 7px;
-}
-h1, h2{
     text-align: center;
 }
 section {
+    border-radius: 10px 10px 10px 10px ;
     background-color: lightgray;
 }
-h3{
+section p{
+    vertical-align: bottom;
+    background-color: lightgray;
+    margin: 16px;
+}
+h3 {
+    margin-left: 16px;
+    font-size: 1.4em;
+}
+main h2{
     text-align: center;
-    color: rgb(210, 158, 223);
-    border-radius: 10px;
+    color: rgb(250, 241, 253);
+    
     background-color: black;
-    padding: 10px 5px;
+    padding: 15px 5px;
 }
 a {
-    color: white;
+    color: rgb(189, 124, 124);
     text-decoration: none;
+    font-size: 1.4;
 }
 section img{
     max-width: 100%;
@@ -29,8 +42,6 @@ section img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 8px;
-    padding-right: 8px;
 }
 /*Default for phone view*/
 main {
@@ -43,7 +54,7 @@ main section {
 }
 
 /* Tablet Views */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
     main {
         grid-template-columns: 1fr 1fr;
     }
