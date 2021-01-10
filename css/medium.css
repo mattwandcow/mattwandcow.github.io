@@ -1,0 +1,7 @@
+@media (min-width: 32.5em) {
+    aside{
+        grid-column: 3 / 4;
+        grid-row: 1 / 4;
+        z-index: 3;
+    }
+ }

@@ -14,7 +14,43 @@
 </head>
 
 <body>
-    
+    <header>
+    <h1>Design Principles Document</h1>
+    <h2>Matt Wilson</h2>
+    </header>
+    <main>
+        <section class="left">
+            <h3>PARC: Proximity</h3>
+            <p>W3Schools</p>
+            <p><a href="w3schools.com">w3schools.com</a></p>
+            <img src="images/w3schools.png">
+            <p>When seen under a smaller viewport, W3Schools makes it easy to see the various lessons that they have to share are easily segregated from other languages.</p>
+        </section>
+        <section class="mid">
+            <h3>Alignment</h3>
+            <p>The Far Side</p>
+            <p><a href="https://www.thefarside.com/">thefarside.com</a></p>
+            <img src="images/farside.png">
+            <p>While it may have taken the Far Side</a> decades to get online, it does not suffer for quality design. A lot of the site impresses me, but the thing I'll emphasize for this is the alignment. Each comic is centered as the focal point of the page.</p>
+        </section>
+        <section class="right">
+            <h3>White Space and Clean Design</h3>
+            <p>Youtube</p>
+            <p><a href="https://www.youtube.com/">youtube.com</a></p>
+            <img src="images/youtube.png">
+            <p>I knew Youtube was going to have some key principles, but I was taken aback by how much whitespace the mobile version has. On the left and the right, and between videos.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id='copy_year'></span> Matt Wilson | Colorado | <a href='https://www.byui.edu/online'>BYUI Online
+                Learning</a></p>
+        <p id='modified_date'></p>
+        <script>
+            document.getElementById('modified_date').innerHTML = 'Last Modified: ' + document.lastModified;
+            var dateObject = new Date();
+            document.getElementById('copy_year').innerHTML = dateObject.getFullYear();
+        </script>
+    </footer>
 </body>
 
 </html>
