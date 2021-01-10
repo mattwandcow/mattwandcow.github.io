@@ -11,6 +11,9 @@ footer {
     padding: 7px 7px;
     text-align: center;
 }
+footer a{
+    color:greenyellow;
+}
 section {
     border-radius: 10px 10px 10px 10px ;
     background-color: lightgray;
@@ -34,7 +37,7 @@ main h2{
 a {
     color: rgb(189, 124, 124);
     text-decoration: none;
-    font-size: 1.4;
+    font-size: 1.2em;
 }
 section img{
     max-width: 100%;
