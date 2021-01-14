@@ -1,0 +1,86 @@
+
+header,footer{
+    display: flex;
+	flex-flow: column;
+	align-items: center;
+    background-color: #26547C;
+    color: #DDFFF7;
+    text-align: center;
+}
+h1{
+    font-family: 'Yeon Sung', cursive;
+    padding: 10px;
+}
+h2, h3, p{
+    font-family: 'Fraunces', serif;
+}
+header p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+}
+footer p{
+    font-size: 1.2em;
+}
+nav{
+    background-color: #72a1e5;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: #FFD166;
+    font-size: 1.3em;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: #26547C;
+}
+main{
+    margin-left: 20px;
+}
+main p{
+    margin-left: 26px;
+    margin-right: 15px;
+}
+footer a {
+    color:#adff2f;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+.color-hf{
+    background-color: #26547C;
+    color: #DDFFF7;
+    padding: 15px;
+    font-size: 1.3em;
+}
+.color-menu{
+    background-color: #72a1e5;
+    color: #FFD166;
+    padding: 15px;
+    font-size: 1.3em;
+}
+.color-hp{
+    padding: 15px;
+    font-size: 1.3em;
+}
+.color-hp-head{
+    font-size: 1.6em;
+}
+.type-title{
+    font-size: 1.3em;
+    font-family: 'Yeon Sung', cursive;
+}
+.type-menu{
+    font-size: 1.3em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.type-menu{
+font-size: 1.3em;
+}

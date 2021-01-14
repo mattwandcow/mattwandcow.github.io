@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Watching Upwind &#124 Color Scheme</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description"
+            content="Page describing color Scheme of the Weather Site project by Matt Wilson in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="siteplan.css">
+        <link rel="stylesheet" href="siteplanLarge.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Source+Sans+Pro&family=Yeon+Sung&display=swap" rel="stylesheet"> 
+    </head>
+
+<body>
+    <header>
+        <h1>Watching Upwind Site Plan</h1>
+        <p>See what's coming, before the storm</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="target-audience.html">Audience</a>
+        <a href="color-scheme.html">Colors</a>
+        <a href="typography.html">Fonts</a>
+    </nav>
+    <main>
+        <p class="color-hf">Header and Footer</p>
+        <p class="color-menu">Menu text</p>
+        <p class="color-hp"><span class='color-hp-head'>Header</span> and Paragraph</p>
+
+    </main>
+    <footer>
+        <p>&copy; <span id='copy_year'></span> Matt Wilson | Colorado | <a href='https://www.byui.edu/online'>BYUI Online
+                Learning</a></p>
+        <p id='modified_date'></p>
+        <script>
+            document.getElementById('modified_date').innerHTML = 'Last Modified: ' + document.lastModified;
+            var dateObject = new Date();
+            document.getElementById('copy_year').innerHTML = dateObject.getFullYear();
+        </script>
+</body>
+
+</html>
+<!-- "color-scheme.html"—reference the elements/content to which the colors will apply.   -->
+<!-- provide examples and actual values as demonstrated in the reading. -->
+<!-- Two personas -->
+<!-- At least five listed scenarios -->

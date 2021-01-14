@@ -1,0 +1,7 @@
+@media (min-device-width: 500px){
+    nav{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+}

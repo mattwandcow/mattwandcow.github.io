@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Watching Upwind &#124 Typography</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description"
+            content="Page listing the fonts and typography of the Weather Site project by Matt Wilson in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="siteplan.css">
+        <link rel="stylesheet" href="siteplanLarge.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Source+Sans+Pro&family=Yeon+Sung&display=swap" rel="stylesheet"> 
+    </head>
+
+<body>
+    <header>
+        <h1>Watching Upwind Site Plan</h1>
+        <p>See what's coming, before the storm</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="target-audience.html">Audience</a>
+        <a href="color-scheme.html">Colors</a>
+        <a href="typography.html">Fonts</a>
+    </nav>
+    <main>
+        <p> <span class="type-title">Site title</span> is in Yeon Sung, a nice handwritten font.</p>
+        <p> The <span class="type-menu">Slogan and Menu</span> are in Source Sans Pro, a nice friendly sans font.</p>
+        <p> <span class="type-menu">Content</span> is in Fraunces, a nice series serif font.</p>
+
+    </main>
+    <footer>
+        <p>&copy; <span id='copy_year'></span> Matt Wilson | Colorado | <a href='https://www.byui.edu/online'>BYUI Online
+                Learning</a></p>
+        <p id='modified_date'></p>
+        <script>
+            document.getElementById('modified_date').innerHTML = 'Last Modified: ' + document.lastModified;
+            var dateObject = new Date();
+            document.getElementById('copy_year').innerHTML = dateObject.getFullYear();
+        </script>
+</body>
+
+</html>
+<!-- typography.html"—reference the elements/content to which the typography choices will apply.    -->
+<!--  Be sure to provide examples. -->
