@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Watching Upwind &#124; Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Index page of the Weather Site project by Matt Wilson in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Source+Sans+Pro&family=Yeon+Sung&display=swap"
+        rel="stylesheet">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/UpwindLogo.png" alt="Watching Upwind logo">
+        <div>
+            <h1>Watching Upwind</h1>
+            <p>See what's coming, before the storm</p>
+        </div>
+    </header>
+    <nav>
+        <ul id="menu_list" class="hide">
+            <li><a id="menu_button" onclick="toggleMenu()"> &#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="placeholder">
+            Hero w/ weather Summary
+        </div>
+        <div class="placeholder">
+            5 Day Forecast
+        </div>
+        <div class="placeholder">
+            Article
+        </div>
+        <div class="placeholder">
+            Contact Information
+        </div>
+    </main>
+    <footer>
+        <img id="location_map" src="" alt="Location Map">
+        <div id="contact_info">
+
+        </div>
+        <p>&copy; <span id='copy_year'></span>Watching Upwind &#124; Attributions &#124; Matt Wilson</p>
+        <p id='current_date'></p>
+    </footer>
+</body>
+<script>
+    var d = new Date();
+    var weekday = ["Sunday", "Monday", "Teusday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+        'November', 'December'];
+    document.getElementById('current_date').innerHTML = weekday[d.getDay()] + ", " + d.getDate() + " " + month[d
+        .getMonth()] + " " + d.getFullYear();
+    var dateObject = new Date();
+    document.getElementById('copy_year').innerHTML = d.getFullYear();
+</script>
+
+</html>
+<!-- "index.html"—the weather site planning document home page includes: -->
+<!-- An appropriate site name (it cannot be "The Weather Site") -->
+<!-- The site purpose -->
+<!-- An available domain name for your site -->
+<!-- A simple logo  -->
