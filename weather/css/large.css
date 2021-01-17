@@ -14,4 +14,13 @@
         margin-top: 7px;
         margin-bottom: 5px;
     }
+    footer {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        padding-left: 45px;
+    }
+    footer p{
+        text-align: left;
+    }
 }
