@@ -3,10 +3,10 @@ function toggleMenu()
 document.getElementById("menu_list").classList.toggle("hide");
 }
 
-function displayDate()
+function processDate()
 {
     var d = new Date();
-    var weekday = ["Sunday", "Monday", "Teusday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
         'November', 'December'
     ];
@@ -14,4 +14,10 @@ function displayDate()
         .getMonth()] + " " + d.getFullYear();
     var dateObject = new Date();
     document.getElementById('copy_year').innerHTML = d.getFullYear();
+    if (d.getDay()==5)
+    {
+        document.getElementById('pancake_alert').style.display="block";
+    }
+
+
 }
