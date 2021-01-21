@@ -130,7 +130,9 @@ main p {
 .forecast h3{
     flex-basis: 100%;
     text-align: center;
-    background-color: #26547C;
+    background-color: #72a1e5;
+    padding-top: 14px;
+
 }
 /*#endregion*/
 

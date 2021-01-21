@@ -24,4 +24,9 @@
     footer p{
         text-align: left;
     }
+    #weather_overlay{
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    }
 }
