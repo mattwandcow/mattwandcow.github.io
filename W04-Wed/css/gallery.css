@@ -17,7 +17,14 @@ h3,
 p {
     font-family: 'Fraunces', serif;
 }
-
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
 /*aside*/
 /*#region*/
 aside{
