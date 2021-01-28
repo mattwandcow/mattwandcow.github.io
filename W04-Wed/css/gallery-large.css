@@ -18,4 +18,10 @@
         text-align: left;
     }
 
+    .weather_box_wrapper{
+        width: 30%;
+    }
+    .weather_box:hover{
+        box-shadow: 10px 10px #000000;
+        }
 }

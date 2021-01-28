@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Source+Sans+Pro&family=Yeon+Sung&display=swap"
         rel="stylesheet">
     <script src="js/scripts.js"></script>
+    <script src="js/lazyload.js" defer></script>
+
 </head>
 
 <body onload="loadScripts()">
@@ -38,17 +40,66 @@
         </ul>
     </nav>
     <main>
-       <div class="weather_box"></div>
-       <div class="weather_box"></div>
-       <div class="weather_box"></div>
+        <h2>Weather Gallery</h2>
+        <div id="weather_box_container">
+            <div class="weather_box_wrapper">
+                <div class="weather_box">
+                    <img src="images/galleryHolder.jpg" data-src="images/gallery1.jpg" alt="Forest Scene">
+                    <p>Morning Mist</p>
+                </div>
+            </div>
+            <div class="weather_box_wrapper">
+                <div class="weather_box">
+                    <img src="images/galleryHolder.jpg" data-src="images/gallery2.jpg" alt="Tuffla Trees">
+                    <p>Bright Sunny day</p>
+                </div>
+            </div>
+            <div class="weather_box_wrapper">
+                <div class="weather_box">
+                    <img src="images/galleryHolder.jpg" data-src="images/gallery3.jpg" alt="Mountain Lake">
+                    <p>Overcast Skies</p>
+                </div>
+            </div>
 
-       <div class="weather_box"></div>
-       <div class="weather_box"></div>
-       <div class="weather_box"></div>
 
-       <div class="weather_box"></div>
-       <div class="weather_box"></div>
-       <div class="weather_box"></div>
+            <div class="weather_box_wrapper">
+                <div class="weather_box">
+                    <img src="images/galleryHolder.jpg" data-src="images/gallery4.jpg" alt="Fir Grove">
+                    <p>Foggy day</p>
+                </div>
+            </div>
+            <div class="weather_box_wrapper">
+                <div class="weather_box">
+                    <img src="images/galleryHolder.jpg" data-src="images/gallery5.jpg" alt="Running Trail">
+                    <p>A Clear Skies</p>
+                </div>
+            </div>
+            <div class="weather_box_wrapper">
+                <div class="weather_box">
+                    <img src="images/galleryHolder.jpg" data-src="images/gallery6.jpg" alt="Forest">
+                    <p>Acres of woodlands</p>
+                </div>
+            </div>
+
+            <div class="weather_box_wrapper">
+                <div class="weather_box">
+                    <img src="images/galleryHolder.jpg" data-src="images/gallery7.jpg" alt="Mountain Clouds">
+                    <p>Storm rising</p>
+                </div>
+            </div>
+            <div class="weather_box_wrapper">
+                <div class="weather_box">
+                    <img src="images/galleryHolder.jpg" data-src="images/gallery8.jpg" alt="Snowy Mountain Forest">
+                    <p>After a snowfall</p>
+                </div>
+            </div>
+            <div class="weather_box_wrapper">
+                <div class="weather_box">
+                    <img src="images/galleryHolder.jpg" data-src="images/gallery9.jpg" alt="Rock Formations">
+                    <p>Hot and dry</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <iframe id="location_map"

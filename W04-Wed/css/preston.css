@@ -125,13 +125,14 @@ main p {
 /*#region*/
 .forecast{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 15px;
+    text-align: center;
 }
 .forecast h3{
     flex-basis: 100%;
-    text-align: center;
+    width: 100%;
     background-color: #72a1e5;
     padding-top: 14px;
     padding-bottom: 8px;
@@ -139,7 +140,13 @@ main p {
 }
 .forecast_placeholder{
     background-color: #72a1e5;
-
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.forecast p{
+    font-size: 1.3em;
+    text-shadow: 1px 1px #9c9ba3;
 }
 /*#endregion*/
 

@@ -27,5 +27,7 @@ nav {
 .hide li:first-child{
     display: none;
 }
-
+.weather_box_wrapper{
+    width: 45%;
+}
 }
