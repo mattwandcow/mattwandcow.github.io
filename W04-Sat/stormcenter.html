@@ -8,19 +8,18 @@
     <meta name="description"
         content="Index page of the Weather Site project by Matt Wilson in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/gallery.css">
-    <link rel="stylesheet" href="css/gallery-med.css">
-    <link rel="stylesheet" href="css/gallery-large.css">
+    <link rel="stylesheet" href="css/stormcenter.css">
+    <link rel="stylesheet" href="css/stormcenter-med.css">
+    <link rel="stylesheet" href="css/stormcenter-large.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Source+Sans+Pro&family=Yeon+Sung&display=swap"
         rel="stylesheet">
-    <script src="js/gallery-scripts.js"></script>
-    <script src="js/lazyload.js" defer></script>
+    <script src="js/stormcenter.js"></script>
+    <script src="js/scripts.js"></script>
 
 </head>
 
 <body onload="loadScripts()">
-
     <header>
         <img src="images/UpwindLogo.png" alt="Watching Upwind logo">
         <div>
@@ -40,6 +39,90 @@
         </ul>
     </nav>
     <main>
+        <h2>Storm Report</h2>
+        <form action="thanks.html">
+            <fieldset>
+                <label>
+                    Full Name
+                    <input type="text" pattern="[A-Za-z\s]{5,}" name="name" required>
+                </label>
+
+                <label>
+                    Email
+                    <input type="text" placeholder="you@email.com" name="email">
+                </label>
+
+                <label>
+                    Telephone
+                    <input type="tel" name="tele" required>
+                </label>
+
+                <label>
+                    Zip code
+                    <input type="number" pattern="[0-9]{5}" name="zip" required>
+                </label>
+            </fieldset>
+                <fieldset>
+                <label>
+                    Storm Date
+                    <input type="date" name="storm-date">
+                </label>
+
+                <label>Storm Type
+                    <input list="storm-list" name="storm-type">
+                    <datalist id="storm-list">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+
+                <label>
+                    Storm Severity<span id="ratingval">: 5</span>
+                    <input type="range" min="1" max="10" name="storm-severity" oninput="adjustRating(this.value)"
+                        onchange="adjustRating(this.value)">
+                </label>
+
+                <label>
+                    Storm Region:
+                    <select name="storm-region">
+                        <option selected disabled hidden>Select Region...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+
+                    </select>
+                </label>
+
+            </fieldset>
+                <fieldset>
+                    Are you safe from the storm?
+                    <label for="safe">
+                        <input type="radio" name="safety" value="Safe" id="safe" class="radio-input">
+                        I'm Safe
+                    </label>
+                    <label for="unsafe">
+                        <input type="radio" name="safety" value="Unsafe" id="unsafe" class="radio-input">
+                        It's Not Safe here
+                    </label>
+                    <label for="notsure">
+                        <input type="radio" name="safety" value="Not Sure" id="notsure" class="radio-input">
+                        I'm Not Sure
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                <label>
+                    Additional Information
+                    <textarea name="storm-notes">
+                </textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit">
+
+        </form>
     </main>
     <footer>
         <iframe id="location_map"
