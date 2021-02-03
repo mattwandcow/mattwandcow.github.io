@@ -1,4 +1,6 @@
 @media (min-width: 700px){
-    
-    width: 23%;
+    selection{
+
+        width: 23%;
+    }
 }
