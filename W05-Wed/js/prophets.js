@@ -11,7 +11,16 @@ fetch(requestURL)
             let card = document.createElement('section');
             let h2 = document.createElement('h2');
             h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+            let span1 =document.createElement('p');
+            span1.textContent= "Date of Birth: " + prophets[i].birthdate;
+            let span2 =document.createElement('p');
+            span2.textContent= "Place of Birth: " + prophets[i].birthplace;
+            let image=document.createElement('img');
+            image.setAttribute('src', prophets[i].imageurl);
             card.appendChild(h2);
+            card.appendChild(span1);
+            card.appendChild(span2);
+            card.appendChild(image);
             document.querySelector('div.cards').appendChild(card);
         }
     });
