@@ -127,6 +127,7 @@ footer {
     background-color: #26547C;
     color: #DDFFF7;
     text-align: center;
+    justify-content: space-around;
 }
 
 footer p {
