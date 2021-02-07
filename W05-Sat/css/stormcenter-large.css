@@ -1,0 +1,27 @@
+@media (min-width: 700px){
+    header {
+        display: flex;
+        flex-flow: row;
+        padding-left: 45px;
+    }
+    h1{
+        padding: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        padding-left: 45px;
+    }
+    footer p{
+        text-align: left;
+    }
+
+    .weather_box_wrapper{
+        width: 30%;
+    }
+    .weather_box:hover{
+        box-shadow: 10px 10px #000000;
+        }
+}

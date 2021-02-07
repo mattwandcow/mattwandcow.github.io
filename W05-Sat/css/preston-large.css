@@ -1,0 +1,32 @@
+@media (min-width: 700px){
+    header {
+        display: flex;
+        flex-flow: row;
+        padding-left: 45px;
+    }
+    h1{
+        padding: 10px;
+    }
+
+    .placeholder{
+        max-width: 75%;
+        margin-left: auto;
+        margin-top: 7px;
+        margin-bottom: 5px;
+        margin-right: auto;
+    }
+    footer {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        padding-left: 45px;
+    }
+    footer p{
+        text-align: left;
+    }
+    #weather_overlay{
+    position: absolute;
+    top: 25px;
+    left: 100px; 
+    }
+}
