@@ -20,13 +20,25 @@ p {
 
 /*aside*/
 /*#region*/
-aside{
+#pancake_alert{
     background-color: aqua;
     font-size: 1.3em;
     text-align: center;
     height: 100%;
     padding: 10px;
     display: none;
+}
+
+/*#endregion*/
+/*aside2*/
+/*#region*/
+#town_events{
+    background-color: #72a1e5;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*#endregion*/

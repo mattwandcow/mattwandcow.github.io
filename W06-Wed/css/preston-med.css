@@ -2,7 +2,7 @@
     header {
         display: flex;
         flex-flow: row;
-        padding-left: 45px;
+        justify-content: center;
     }
     h1{
         padding: 10px;

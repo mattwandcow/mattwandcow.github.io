@@ -1,9 +1,5 @@
 @media (min-width: 700px){
-    header {
-        display: flex;
-        flex-flow: row;
-        padding-left: 45px;
-    }
+
     h1{
         padding: 10px;
     }
