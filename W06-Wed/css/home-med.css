@@ -1,0 +1,72 @@
+@media (min-width: 650px) {
+
+/*universal*/
+/*#region*/
+    header {
+        display: flex;
+        flex-flow: row;
+        padding-left: 45px;
+    }
+
+    h1 {
+        padding: 10px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #menu_list {
+        display: flex;
+    }
+
+    #menu_list li {
+        display: block;
+        flex: 1 1 100%
+    }
+
+    #menu_list li:first-child {
+        display: none;
+    }
+
+    .hide li {
+        display: block;
+        flex: 1 1 100%
+    }
+
+    .hide li:first-child {
+        display: none;
+    }
+
+/*#endregion*/
+
+/*new stuff*/
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+div.cards img{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+div.town_details{
+    grid-column: 1 / 2;
+}
+div.cards h2{
+    margin-top: 0;
+}
+
+div.cards section:nth-child(2) img{
+    grid-column: 1 / 2;
+}
+div.cards section:nth-child(2) div.town_details{
+    grid-column: 2 / 3;
+
+}
+div.cards section:nth-child(2) div.town_name{
+    grid-column: 2 / 3;
+
+}
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Watching Upwind &#124; Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Index page of the Weather Site project by Matt Wilson in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/preston.css">
+    <link rel="stylesheet" href="css/preston-med.css">
+    <link rel="stylesheet" href="css/preston-large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Source+Sans+Pro&family=Yeon+Sung&display=swap"
+        rel="stylesheet">
+        <script src="js/menu-toggle.js"></script>
+        <script src="js/sodasprings-scripts.js" defer></script>
+        <script src="js/sodasprings-weather.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/UpwindLogo.png" alt="Watching Upwind logo">
+        <div>
+            <h1>Watching Upwind</h1>
+            <p>See what's coming, before the storm</p>
+        </div>
+    </header>
+    <nav>
+        <ul id="menu_list" class="hide">
+            <li><a id="menu_button" onclick="toggleMenu()"> &#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html" class="active">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Soda Springs Idaho</h2>
+        <div class="hero_box">
+            <picture>
+                <source srcset="images/franklinLarge.jpeg" media="(min-width:800px)">
+                <source srcset="images/franklinMedium.jpeg" media="(min-width:500px) and (max-width:799px)">
+                <img id="hero_img" src="images/franklinSmall.jpeg" alt="View of Preston's Mountains">
+            </picture>
+            <div id="weather_overlay">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="current_weather">Sunny</span></p>
+                <p>High: <span><span id="dayTemp">30</span>&#176; F</span></p>
+                <p>Wind Chill: <span><span id="windChill"></span></span></p>
+                <p>Humidity: <span id="dayHum">68</span>%</p>
+                <p>Wind Speed: <span><span id="dayWind">4</span> mph</span></p>
+            </div>
+        </div>
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+            <div class="forecast_placeholder">
+                <p id="dailyDay1"></p>
+                <img id="dayImg1" src="images/cloudy.png">
+                <p><span id="dailyTemp1">38</span> &#176; F</p>
+            </div>
+            <div class="forecast_placeholder">
+                <p id="dailyDay2"></p>
+                <img id="dayImg2" src="images/cloudy.png">
+                <p><span id="dailyTemp2">38</span> &#176; F</p>
+            </div>
+            <div class="forecast_placeholder">
+                <p id="dailyDay3"></p>
+                <img id="dayImg3" src="images/cloudy.png">
+                <p><span id="dailyTemp3">38</span> &#176; F</p>
+            </div>
+            <div class="forecast_placeholder">
+                <p id="dailyDay4"></p>
+                <img id="dayImg4" src="images/cloudy.png">
+                <p><span id="dailyTemp4">38</span> &#176; F</p>
+            </div>
+            <div class="forecast_placeholder">
+                <p id="dailyDay5"></p>
+                <img id="dayImg5" src="images/cloudy.png">
+                <p><span id="dailyTemp5">38</span> &#176; F</p>
+            </div>
+        </div>
+        <div class="article">
+            <h3>Article Title</h3>
+            <img id="article_img" src="images/old-farm-house-2096642_640.jpg" alt="Article image">
+            <p>
+                Mauris congue pellentesque neque, ut fermentum ante cursus sed. Vestibulum et lectus ipsum. Nam at
+                tortor non orci vulputate ultricies quis ut erat. Aenean iaculis ante leo. Curabitur aliquam arcu vitae
+                lectus elementum, at fringilla dui mollis. Mauris eu elementum ligula. Proin quis consectetur tortor.
+                Aenean luctus sollicitudin lacinia. Vestibulum sed porta mi, ac malesuada augue. Donec et vehicula urna.
+                Nulla vitae lectus quis dolor tempor egestas. Mauris aliquet est quam, vel fermentum metus pretium at.
+            </p>
+            <p>
+                Duis mollis euismod mattis. Phasellus sit amet dapibus nisl, id auctor ipsum. In vitae consectetur est,
+                consequat scelerisque nisi. Ut tristique accumsan erat sed lacinia. Proin interdum bibendum magna, sed
+                molestie arcu elementum eleifend. Aenean venenatis fermentum est in luctus. Donec commodo, dui vel
+                commodo pellentesque, ligula ante vulputate dui, at congue ligula ante ac est. Duis egestas bibendum
+                justo, nec aliquet diam condimentum sit amet. In porttitor malesuada elit, nec faucibus ex. Donec
+                pellentesque metus urna, a porta leo ultrices eget. Integer eu elementum sapien.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <iframe id="location_map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21928.09523832537!2d-111.88318076774705!3d42.09768857973415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1610864908872!5m2!1sen!2sus"
+            width="300" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div>
+            <div id="contact_info">
+                <p>Email: blah@WatchUpwind.com</p>
+                <p>Phone: 555-XXX-XXXX</p>
+                <p>Address: There was a 3rd row...</p>
+            </div>
+            <div id="media_links">
+                <img src="images/iconFB.png" alt="Facebook Social Media Icon">
+                <img src="images/iconTW.png" alt="Twitter Social Media Icon">
+                <img src="images/iconYT.png" alt="Youtube Social Media Icon">
+            </div>
+        </div>
+        <div>
+            <p>Weather Information provided by <a href='openweathermap.org/'>OpenWeatherMap.org</a>.</p>
+            <p>&copy; <span id='copy_year'></span> Watching Upwind &#124; Attributions &#124; Matt Wilson</p>
+            <p id='current_date'></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

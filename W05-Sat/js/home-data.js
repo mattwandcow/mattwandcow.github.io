@@ -23,6 +23,7 @@ fetch(requestURL)
             span3.textContent= "Annual Rain Fall: " + towns[town_numbers[i]].averageRainfall;
             let image=document.createElement('img');
             image.setAttribute('src', "images/"+towns[town_numbers[i]].photo);
+            image.alt=towns[town_numbers[i]].name + "image";
             let statBlock = document.createElement('div');
             statBlock.className="town_details"
             let townName = document.createElement('div');
