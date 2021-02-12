@@ -23,11 +23,6 @@ function processDate()
         .getMonth()] + " " + d.getFullYear();
     var dateObject = new Date();
     document.getElementById('copy_year').innerHTML = d.getFullYear();
-    document.getElementById('dailyDay1').innerHTML=weekday(d.getDay());
-    document.getElementById('dailyDay2').innerHTML=weekday(d.getDay()+1);
-    document.getElementById('dailyDay3').innerHTML=weekday(d.getDay()+2);
-    document.getElementById('dailyDay4').innerHTML=weekday(d.getDay()+3);
-    document.getElementById('dailyDay5').innerHTML=weekday(d.getDay()+4);
 
 }
 function weekday(value)
