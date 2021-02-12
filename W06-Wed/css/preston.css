@@ -21,7 +21,7 @@ p {
 /*aside*/
 /*#region*/
 #pancake_alert{
-    background-color: aqua;
+    background-color: #72a1e5;
     font-size: 1.3em;
     text-align: center;
     height: 100%;
@@ -30,16 +30,6 @@ p {
 }
 
 /*#endregion*/
-/*aside2*/
-/*#region*/
-#town_events{
-    background-color: #72a1e5;
-    font-size: 1.3em;
-    text-align: center;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /*#endregion*/
 
@@ -191,6 +181,23 @@ main p {
 }
 #article_text{
     padding: 10px;
+}
+/*#endregion*/
+
+/*Events*/
+/*#region*/
+#town_events{
+    
+    width: 315px;
+    background: radial-gradient(#eee, #4567aa);
+	border: 1px solid #000;
+	box-shadow: 0 0 20px #111;
+    opacity: 1;
+    text-align: center;
+
+    position: relative;
+    margin: auto;
+    margin-bottom: 5px;
 }
 /*#endregion*/
 

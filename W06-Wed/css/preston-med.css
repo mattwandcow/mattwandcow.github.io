@@ -68,5 +68,11 @@ margin-top: 0;
     width: 140px;
     margin-left: auto;
     margin-right: auto;
+}#town_events{
+    
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 }
