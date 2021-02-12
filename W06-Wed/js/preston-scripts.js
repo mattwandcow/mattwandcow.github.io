@@ -9,6 +9,10 @@ document.getElementById('dailyDay2').innerHTML=weekday(d.getDay()+2);
 document.getElementById('dailyDay3').innerHTML=weekday(d.getDay()+3);
 document.getElementById('dailyDay4').innerHTML=weekday(d.getDay()+4);
 document.getElementById('dailyDay5').innerHTML=weekday(d.getDay()+5);
+if (d.getDay()==5)
+{
+    document.getElementById('pancake_alert').style.display="block";
+}
 
 function weekday(value)
 {
