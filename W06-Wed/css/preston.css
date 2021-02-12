@@ -81,6 +81,7 @@ nav .active{
 }
 .hide li {
     display: none;
+    margin: 5px;
 }
 
 .hide li:first-child {
@@ -182,12 +183,13 @@ main p {
 }
 .article img{
     max-width: 100%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
 }
-.article p{
+#article_text{
     padding: 10px;
 }
 /*#endregion*/

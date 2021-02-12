@@ -48,14 +48,16 @@ margin-top: 0;
 .article h3{
     width: 100%;
 }
-.article img{
+#article_img{
     max-width: 40%;
+    height: auto;
     order: 3;
     float: right;
     margin-right: 14px;
     margin-left: 8px;
+    align-self: center;
 }
-.article p{
+#article_text{
     order: 2;
     width: 40%;
 }

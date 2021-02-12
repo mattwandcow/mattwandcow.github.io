@@ -30,4 +30,8 @@ nav {
 .weather_box_wrapper{
     width: 45%;
 }
+#form_folder{
+    width: 350px;
+    margin: auto;
+}
 }

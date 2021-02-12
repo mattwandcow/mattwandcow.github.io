@@ -1,4 +1,4 @@
-const apiURLweather = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=e0531f201d2ec4f905db449ba4f175d1&units=imperial"
+const apiURLweather = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=e0531f201d2ec4f905db449ba4f175d1&units=imperial"
 
 fetch(apiURLweather)
   .then((response) => response.json())
@@ -15,7 +15,7 @@ document.getElementById('windChill').textContent = calcWindchill(temperature, wi
 document.getElementById('dayHum').textContent = jsObject.main.humidity;
 
   });
-  const apiURLforecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=e0531f201d2ec4f905db449ba4f175d1&units=imperial"
+  const apiURLforecast = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=e0531f201d2ec4f905db449ba4f175d1&units=imperial"
 
   var weatherList;
 
