@@ -25,4 +25,12 @@
     top: 25px;
     left: 100px; 
     }
+    .forecast{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .forecast_placeholder{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }

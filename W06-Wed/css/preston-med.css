@@ -10,6 +10,7 @@
 nav {
     text-align: center;
 }
+
 #menu_list{
     display: flex;
 }
@@ -39,17 +40,31 @@ top: 10px;
 left: 10px;
 margin-top: 0;
 }
+.article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.article h3{
+    width: 100%;
+}
 .article img{
+    max-width: 40%;
+    order: 3;
     float: right;
     margin-right: 14px;
     margin-left: 8px;
 }
+.article p{
+    order: 2;
+    width: 40%;
+}
 .forecast{
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 .forecast_placeholder{
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
 }
 }

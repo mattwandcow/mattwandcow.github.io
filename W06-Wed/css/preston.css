@@ -157,6 +157,9 @@ main p {
     margin-top: 10px;
 }
 .forecast p{
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
     font-size: 1.3em;
     text-shadow: 1px 1px #9c9ba3;
 }
@@ -167,19 +170,22 @@ main p {
 .article{
     margin-left: 12px;
     margin-right: 12px;
+    margin-bottom: 10px;
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 14px;
+    padding-bottom: 5px;
     background-color: #72a1e5;
+}
+.article h3{
+    text-align: center;
 }
 .article img{
     max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-.article h3{
-    text-align: center;
+    margin-bottom: 5px;
 }
 .article p{
     padding: 10px;
