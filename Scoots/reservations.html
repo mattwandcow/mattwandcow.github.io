@@ -39,7 +39,7 @@
             Rental Agreement Information
         </section>
         <section>
-            rental details such as the date, period, rental type, number of people, cruise line if applicable, and special accommodations/comments such as the need and location of a drop-off request. 
+        cruise line if applicable, and special accommodations/comments such as the need and location of a drop-off request. 
             <form>
                 <fieldset>
                     <label>
@@ -65,22 +65,36 @@
                 <fieldset>
                     <label>
                         Date of Reservation
-                        <input type="text" pattern="[A-Za-z\s]{5,}" name="name" required>
+                        <input type="date" name="date" required>
+                    </label>
+                    <label>
+                        Number of days
+                        <input type="number" value="1" min="1" name="number">
+                    </label>   
+                    <label>
+                        Number of Guests
+                        <input type="number" value="1" min="1" name="number">
                     </label>
     
                     <label>
-                        Email
-                        <input type="text" placeholder="you@email.com" name="email">
+                        Rental Type
+                        <select name="rental-type">
+                            <option selected disabled hidden>Select Rental Type...</option>
+                            <option value="half">3-Hour</option>
+                            <option value="full">Full Day </option>
+                        </select>
                     </label>
-    
+                </fieldset>
+                <fieldset>
                     <label>
-                        Telephone
-                        <input type="tel" name="tele" required>
+                        Are you with a cruiseline? If so, which one?
+                        <textarea name="storm-notes">
+                    </textarea>
                     </label>
-    
                     <label>
-                        Zip code
-                        <input type="text" pattern="[0-9]{5}" name="zip" required>
+                        Additional Information, Comments, and Drop-off Instructions
+                        <textarea name="storm-notes">
+                    </textarea>
                     </label>
                 </fieldset>
             </form>
