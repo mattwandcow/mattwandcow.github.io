@@ -25,6 +25,8 @@ fetch(requestURL)
             //set up tail
             let passengers=document.createElement('p');
             passengers.textContent= "Max persons: " + rentals[i].persons;
+            
+            card_tail.appendChild(passengers);
 
             //finished, add all to card
             card.appendChild(card_head);
