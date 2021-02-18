@@ -1,0 +1,64 @@
+/*general*/
+/*#region*/
+body{
+    background-color: #1ddeff;
+}
+h1 {
+    font-family: 'Lemonada', cursive;
+}
+
+h2, h3{
+    font-family: 'Lato', sans-serif;
+
+}
+p {
+    font-family: 'Merriweather', serif;
+}
+/*#endregion*/
+
+/*header*/
+/*#region*/
+#scoots-logo{
+    display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+/*#endregion*/
+
+/*nav*/
+/*#region*/
+nav
+{
+    background-color: #00e4ce;
+}
+
+.hide li {
+    display: none;
+}
+
+.hide li:first-child {
+    display: block;
+    margin-left: 0px;
+}
+nav ul{
+    list-style-type: none;
+}
+/*#endregion*/
+/*footer*/
+/*#region*/
+footer{
+    background-color: #eddea4;
+    border-top: 4px dotted #00e4ce;
+    border-bottom: 4px dotted #00e4ce;
+
+}
+/*#endregion*/
+
+
+
+
+/*nav*/
+/*#region*/
+
+/*#endregion*/

@@ -1,0 +1,50 @@
+{"rentals": [
+{
+"name":"Honda Metro Scooter",
+"type":"scooter",
+"image":"",
+"persons":1,
+"reservation": { "full": "$30", "half": "$20" },
+"walkin": { "full": "$35", "half": "$25" }
+},
+{
+"name":"Honda Dio Scooter",
+"type":"scooter",
+"imageurl":"",
+"persons":2,
+"reservation": { "full": "$40", "half": "$30" },
+"walkin": { "full": "$45", "half": "$35" }
+},
+{
+"name":"Honda PCX150 Scooter",
+"type":"scooter",
+"imageurl":"",
+"persons":2,
+"reservation": { "full": "$50", "half": "$40" },
+"walkin": { "full": "$55", "half": "$45" }
+},
+{
+"name":"Honda Pioneer ATV",
+"type":"scooter",
+"imageurl":"",
+"persons":4,
+"reservation": { "full": "$70", "half": "$50" },
+"walkin": { "full": "$80", "half": "$60" }
+},
+{
+"name":"Jeep Wrangler—4 door with a/c",
+"type":"scooter",
+"imageurl":"",
+"persons":5,
+"reservation": { "full": "$100", "half": "$70" },
+"walkin": { "full": "$125", "half": "$85" }
+},
+{
+"name":"Jeep Wrangler—2 door",
+"type":"scooter",
+"imageurl":"",
+"persons":4,
+"reservation": { "full": "$85", "half": "$60" },
+"walkin": { "full": "$90", "half": "$70" }
+}
+]}
