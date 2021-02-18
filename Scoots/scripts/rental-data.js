@@ -31,11 +31,11 @@ fetch(requestURL)
             let th = document.createElement('thead');
             let tr0= document.createElement('tr');
                 let td0a =document.createElement('td');
-                td0a.appendChild(document.createTextNode(""))
+                td0a.appendChild(document.createTextNode(""));
                 let td0b =document.createElement('td');
-                td0b.appendChild(document.createTextNode("Reservation"))
+                td0b.appendChild(document.createTextNode("Reservation"));
                 let td0c =document.createElement('td');
-                td0c.appendChild(document.createTextNode("Walk-in")
+                td0c.appendChild(document.createTextNode("Walk-in"));
             tr0.appendChild(td0a);
             tr0.appendChild(td0b);
             tr0.appendChild(td0c);
@@ -43,21 +43,21 @@ fetch(requestURL)
             let tb = document.createElement('tbody');
             let tra= document.createElement('tr');
                 let tdaa =document.createElement('td');
-                tdaa.appendChild(document.createTextNode("3 Hour Rental"))
+                tdaa.appendChild(document.createTextNode("3 Hour Rental"));
                 let tdab =document.createElement('td');
-                tdab.appendChild(document.createTextNode(rentals[i].reservation.half))
+                tdab.appendChild(document.createTextNode(rentals[i].reservation.half));
                 let tdac =document.createElement('td');
-                tdac.appendChild(document.createTextNode(rentals[i].walkin.half))
+                tdac.appendChild(document.createTextNode(rentals[i].walkin.half));
             tra.appendChild(tdaa);
             tra.appendChild(tdab);
             tra.appendChild(tdac);
             let trb= document.createElement('tr');
                 let tdba =document.createElement('td');
-                tdba.appendChild(document.createTextNode("Full Day"))
+                tdba.appendChild(document.createTextNode("Full Day"));
                 let tdbb =document.createElement('td');
-                tdbb.appendChild(document.createTextNode(rentals[i].reservation.full))
+                tdbb.appendChild(document.createTextNode(rentals[i].reservation.full));
                 let tdbc =document.createElement('td');
-                tdbc.appendChild(document.createTextNode(rentals[i].walkin.full))
+                tdbc.appendChild(document.createTextNode(rentals[i].walkin.full));
             trb.appendChild(tdba);
             trb.appendChild(tdbb);
             trb.appendChild(tdbc);
