@@ -2,7 +2,7 @@
 {
 "name":"Honda Metro Scooter",
 "type":"scooter",
-"image":"holder.jpg",
+"imageurl":"holder.jpg",
 "persons":1,
 "reservation": { "full": "$30", "half": "$20" },
 "walkin": { "full": "$35", "half": "$25" }

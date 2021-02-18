@@ -19,8 +19,11 @@ fetch(requestURL)
             let image=document.createElement('img');
             image.setAttribute('src', "images/"+rentals[i].imageurl);
             image.setAttribute('alt', rentals[i].name);
-
             card_head.appendChild(image);
+            
+            let h2 = document.createElement('h2');
+            h2.textContent = rentals[i].name;
+            card_head.appendChild(h2);
 
             //set up tail
             let passengers=document.createElement('p');
