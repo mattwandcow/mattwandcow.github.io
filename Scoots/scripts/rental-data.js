@@ -7,6 +7,7 @@ fetch(requestURL)
       .then(function (jsonObject) {
         console.table(jsonObject);  // temporary checking for valid response and data parsing
         const rentals = jsonObject['rentals'];
+        let page = document.getElementsByTagName('main');
         for (let i = 0; i < rentals.length; i++ ) 
         {
             //declare base shape
@@ -28,5 +29,9 @@ fetch(requestURL)
             //finished, add all to card
             card.appendChild(card_head);
             card.appendChild(card_tail);
+            
+            //Now add it to the page
+            page.appendChild(card);
+
         }
     });
