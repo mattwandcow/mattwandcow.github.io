@@ -25,9 +25,48 @@ fetch(requestURL)
             //set up tail
             let passengers=document.createElement('p');
             passengers.textContent= "Max persons: " + rentals[i].persons;
-            
             card_tail.appendChild(passengers);
 
+            let grid = document.createElement('table');
+            let th = document.createElement('thead');
+            let tr0= document.createElement('tr');
+                let td0a =document.createElement('td');
+                td0a.appendChild(document.createTextNode(""))
+                let td0b =document.createElement('td');
+                td0b.appendChild(document.createTextNode("Reservation"))
+                let td0c =document.createElement('td');
+                td0c.appendChild(document.createTextNode("Walk-in")
+            tr0.appendChild(td0a);
+            tr0.appendChild(td0b);
+            tr0.appendChild(td0c);
+            th.appendChild(tr0);
+            let tb = document.createElement('tbody');
+            let tra= document.createElement('tr');
+                let tdaa =document.createElement('td');
+                tdaa.appendChild(document.createTextNode("3 Hour Rental"))
+                let tdab =document.createElement('td');
+                tdab.appendChild(document.createTextNode(rentals[i].reservation.half))
+                let tdac =document.createElement('td');
+                tdac.appendChild(document.createTextNode(rentals[i].walkin.half))
+            tra.appendChild(tdaa);
+            tra.appendChild(tdab);
+            tra.appendChild(tdac);
+            let trb= document.createElement('tr');
+                let tdba =document.createElement('td');
+                tdba.appendChild(document.createTextNode("Full Day"))
+                let tdbb =document.createElement('td');
+                tdbb.appendChild(document.createTextNode(rentals[i].reservation.full))
+                let tdbc =document.createElement('td');
+                tdbc.appendChild(document.createTextNode(rentals[i].walkin.full))
+            trb.appendChild(tdba);
+            trb.appendChild(tdbb);
+            trb.appendChild(tdbc);
+            tb.appendChild(tra);
+            tb.appendChild(trb);
+            grid.appendChild(th);
+            grid.appendChild(tb);
+            card_tail.appendChild(grid);
+            
             //finished, add all to card
             card.appendChild(card_head);
             card.appendChild(card_tail);
