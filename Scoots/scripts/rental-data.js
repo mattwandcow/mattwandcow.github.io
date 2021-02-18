@@ -31,7 +31,7 @@ fetch(requestURL)
             card.appendChild(card_tail);
             
             //Now add it to the page
-            page.appendChild(card);
+            document.querySelector('div.cards').appendChild(card);
 
         }
     });
