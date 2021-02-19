@@ -17,9 +17,19 @@ fetch(apiURLweather)
 
     let today_temp = document.createElement('p');
     today_temp.textContent = Math.round(jsObject.main.temp)+String.fromCharCode(176)+" F";
+    
+    let today_hum = document.createElement('p');
+    today_hum.textContent = Math.round(jsObject.main.humidity)+"%";
+    
+    let today_con = document.createElement('p');
+    today_con.textContent = "Current Weather: "+jsObject.weather[0].description;
+
+
     weather_card.append(today_header);
     weather_card.append(today_image);
     weather_card.append(today_temp);
+    weather_card.append(today_hum);
+    weather_card.append(today_con);
 }
   );
 

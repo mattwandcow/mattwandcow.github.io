@@ -1,0 +1,15 @@
+form{
+    margin: 10px;
+}
+form label{
+    display: block;
+    margin: 5px;
+}
+form input,textarea,select{
+    display: block;
+    margin-left: 5px;
+}
+fieldset{
+    margin: 5px;
+    border-radius: 15px;
+}
