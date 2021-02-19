@@ -12,9 +12,20 @@ div .hide{
     cursor: pointer;
 }
 section{
-    border-top: 5px solid #eddea4;
+    background-color: #00e4ce;
     margin-bottom: 7px;
 }
-.card_tail{
+section div:nth-child(2){
     margin-left: 10px;
+    text-align:center;
+    padding-bottom: 5px;
 }
+section h2,h3{
+    margin-top: 0px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1ddeff;
+      width: 100%;
+      border-bottom: 4px dotted #eddea4;
+  }
