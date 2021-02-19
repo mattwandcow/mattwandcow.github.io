@@ -4,7 +4,17 @@ div .hide{
 .card_head{
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
 }
+
 .card_head:hover{
-    text-shadow: 1px 1px #aaaaaa;
+    background-color: rgba(0,0,0,.1);
+    cursor: pointer;
+}
+section{
+    border-top: 5px solid #eddea4;
+    margin-bottom: 7px;
+}
+.card_tail{
+    margin-left: 10px;
 }

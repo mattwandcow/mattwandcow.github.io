@@ -1,3 +1,8 @@
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 form{
     margin: 10px;
 }
@@ -19,20 +24,4 @@ fieldset{
     margin: 0px;
     margin-left: auto;
     margin-right: auto;
-}
-
-section h2 {
-    text-align: center;
-    margin-top: 0px;
-    padding: 5px;
-    background-color: #00e4ce;
-      width: 100%;
-      border-bottom: 4px dotted #eddea4;
-  }
-section ul{
-    list-style-type: none;
-    padding-left: 10px;
-}
-section li{
-    padding: 4px;
 }

@@ -12,6 +12,7 @@ margin-right: auto;
 
 }
 #action_call button{
+  display: block;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: auto;
@@ -55,8 +56,4 @@ section h2{
   section h3{
       text-align: center;
   }
-nav{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
 

@@ -32,6 +32,8 @@ nav
 {
     background-color: #00e4ce;
     font-size: 1.2em;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .hide li {
@@ -45,6 +47,9 @@ nav
 nav ul{
     list-style-type: none;
 }
+nav a{
+    text-decoration: none;
+}
 /*#endregion*/
 /*footer*/
 /*#region*/
@@ -53,7 +58,6 @@ footer{
     background-color: #eddea4;
     border-top: 4px dotted #00e4ce;
     text-align: center;
-
 }
 /*#endregion*/
 

@@ -1,10 +1,12 @@
+section{
+    background-color: #00e4ce;
+}
 section p{
     margin-left: 10px;
     margin-right: 10px;
     padding-bottom: 10px;
-    background-color: #00e4ce;
 }
-section h2{
+section h2,h3{
     margin-top: 0px;
     padding: 5px;
     background-color: #1ddeff;

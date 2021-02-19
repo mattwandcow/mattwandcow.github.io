@@ -18,6 +18,7 @@ fetch(requestURL)
             let card_tail= document.createElement('div');
             card_tail.setAttribute('id',"card_tail_"+i);
             card_tail.setAttribute('class',"hide");
+            card_tail.setAttribute('class',"card_tail");
 
 
             //set up card head
