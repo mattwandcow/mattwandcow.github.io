@@ -31,6 +31,7 @@ margin-right: auto;
 nav
 {
     background-color: #00e4ce;
+    font-size: 1.2em;
 }
 
 .hide li {
@@ -48,8 +49,10 @@ nav ul{
 /*footer*/
 /*#region*/
 footer{
+    padding-top: 5px;
     background-color: #eddea4;
     border-top: 4px dotted #00e4ce;
+    text-align: center;
 
 }
 /*#endregion*/

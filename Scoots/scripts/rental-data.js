@@ -13,10 +13,11 @@ fetch(requestURL)
             //declare base shape
             let card = document.createElement('section');
             let card_head= document.createElement('div');
-            card_head.setAttribute('class',"card_head")
+            card_head.setAttribute('class',"card_head");
             card_head.setAttribute('onClick',"expandSegment("+i+")");
             let card_tail= document.createElement('div');
-            card_tail.setAttribute('id',"card_tail_"+i)
+            card_tail.setAttribute('id',"card_tail_"+i);
+            card_tail.setAttribute('class',"hide");
 
 
             //set up card head
