@@ -13,7 +13,11 @@ fetch(requestURL)
             //declare base shape
             let card = document.createElement('section');
             let card_head= document.createElement('div');
+            card_head.setAttribute('class',"card_head")
+            card_head.setAttribute('onClick',"expandSegment("+i+")");
             let card_tail= document.createElement('div');
+            card_tail.setAttribute('id',"card_tail_"+i)
+
 
             //set up card head
             let image=document.createElement('img');
@@ -79,3 +83,9 @@ fetch(requestURL)
 
         }
     });
+
+function expandSegment(x)
+{
+
+    document.getElementById("card_tail_"+x).classList.toggle("hide");
+}

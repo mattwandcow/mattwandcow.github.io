@@ -4,5 +4,53 @@ margin-left: auto;
 margin-right: auto;
 }
 #action_call{
+    display: block;
+    width: 320px;
     background-color: #eddea4;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+#weather_box{
+    margin: 5px;
+    margin-top:10px;
+      background-color: #00e4ce;
+      display: flex;
+      flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+      justify-content: space-around;
+  }
+#weather_box h2{
+    margin-top: 0px;
+    padding: 5px;
+    background-color: #1ddeff;
+      width: 100%;
+      border-bottom: 4px dotted #eddea4;
+  }
+  
+#weather_box p{
+     font-size: 1.4em;
+  }
+#weather_box .wide{
+     font-size: 1.1em;
+  }
+
+  section{
+    background-color: #00e4ce;
+}
+section h2{
+    margin-top: 0px;
+    padding: 5px;
+    background-color: #1ddeff;
+      width: 100%;
+      border-bottom: 4px dotted #eddea4;
+  }
+  section h3{
+      text-align: center;
+  }
+nav{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+

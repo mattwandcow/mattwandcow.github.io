@@ -23,7 +23,7 @@ fetch(apiURLweather)
     
     let today_con = document.createElement('p');
     today_con.textContent = "Current Weather: "+jsObject.weather[0].description;
-
+    today_con.setAttribute('class',"wide");
 
     weather_card.append(today_header);
     weather_card.append(today_image);

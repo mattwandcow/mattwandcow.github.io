@@ -1,0 +1,10 @@
+.hide{
+    display: none;
+}
+.card_head{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.card_head:hover{
+    text-shadow: 1px 1px #aaaaaa;
+}
