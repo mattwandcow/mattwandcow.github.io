@@ -29,12 +29,16 @@ section{
     background-color: #00e4ce;
     margin-bottom: 7px;
 }
+section p{
+    padding-right: 7px;
+    padding-left: 7px;
+}
 section h2{
     margin-top: 0px;
-    padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #1ddeff;
       width: 100%;
       border-bottom: 4px dotted #eddea4;
+      text-align: center;
   }

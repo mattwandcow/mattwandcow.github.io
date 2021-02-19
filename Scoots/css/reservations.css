@@ -21,18 +21,25 @@ fieldset{
     margin-right: auto;
 }
 
-section h2 {
-    text-align: center;
+section{
+    background-color: #00e4ce;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+section h2{
     margin-top: 0px;
     padding: 5px;
-    background-color: #00e4ce;
+    background-color: #1ddeff;
       width: 100%;
       border-bottom: 4px dotted #eddea4;
   }
+
 section ul{
     list-style-type: none;
     padding-left: 10px;
 }
 section li{
     padding: 4px;
+    font-size: 1.3em;
+    margin-right: 7px;
 }

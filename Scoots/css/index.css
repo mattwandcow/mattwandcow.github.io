@@ -9,8 +9,11 @@ margin-right: auto;
     background-color: #eddea4;
     margin-left: auto;
     margin-right: auto;
+    padding: 7px;
 }
-
+#action_call a{
+text-decoration: none;
+}
 #action_call button{
   display: block;
   margin-top: 5px;
@@ -20,7 +23,6 @@ margin-right: auto;
 }
 
 #weather_box{
-    margin: 5px;
     margin-top:10px;
       background-color: #00e4ce;
       display: flex;
@@ -33,7 +35,7 @@ margin-right: auto;
     margin-top: 0px;
     padding: 5px;
     background-color: #1ddeff;
-      width: 90%;
+      width: 100%;
       border-bottom: 4px dotted #eddea4;
   }
   
@@ -46,12 +48,14 @@ margin-right: auto;
 
   section{
     background-color: #00e4ce;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 section h2{
     margin-top: 0px;
     padding: 5px;
     background-color: #1ddeff;
-      width: 90%;
+      width: 100%;
       border-bottom: 4px dotted #eddea4;
   }
   section h3{
