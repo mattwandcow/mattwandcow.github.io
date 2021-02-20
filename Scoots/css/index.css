@@ -143,3 +143,35 @@
       }
     
       /*#endregion*/
+  /*Large View*/
+  /*#region*/
+  @media (min-width: 800px) {
+    main{
+      display: grid;
+      grid-template-columns: 20% 1fr;
+    }
+    #action_call{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      position: static;
+      grid-column: 1;
+      grid-row: 1/2;
+      background-color: rgba(237, 222, 164, 1);
+      border-radius: 0px;
+      width:auto;
+    }
+    picture{
+      margin-top: 10px;
+      grid-column: 2;
+      grid-row: 1/3;
+    }
+    #weather_box{
+      grid-column: 1;
+      grid-row: 2/3;
+    }
+    section{
+      grid-column: 1/ span 2;
+    }
+  }
+
+  /*#endregion*/

@@ -32,7 +32,7 @@ fetch(apiURLweather)
     today_box.append(today_temp);
     today_box.append(today_hum);
     today_box.append(today_con);
-    weather_card.append(today_box);
+    weather_card.appendChild(today_box);
 }
   );
 
@@ -66,7 +66,7 @@ fetch(apiURLweather)
     future_box.append(future_header);
     future_box.append(future_image);
     future_box.append(future_temp);
-    weather_card.append(future_box);
+    weather_card.appendChild(future_box);
 
 
 });
