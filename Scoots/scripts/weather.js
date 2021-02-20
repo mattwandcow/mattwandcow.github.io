@@ -6,6 +6,8 @@ fetch(apiURLweather)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
+    let today_box=document.createElement('div');
+    today_box.setAttribute('id',"wb_today");
 
     let today_header = document.createElement('h2');
     today_header.textContent = "Today's Weather"
@@ -25,11 +27,12 @@ fetch(apiURLweather)
     today_con.textContent = "Current Weather: "+jsObject.weather[0].description;
     today_con.setAttribute('class',"wide");
 
-    weather_card.append(today_header);
-    weather_card.append(today_image);
-    weather_card.append(today_temp);
-    weather_card.append(today_hum);
-    weather_card.append(today_con);
+    today_box.append(today_header);
+    today_box.append(today_image);
+    today_box.append(today_temp);
+    today_box.append(today_hum);
+    today_box.append(today_con);
+    weather_card.append(today_box);
 }
   );
 
@@ -41,6 +44,9 @@ fetch(apiURLweather)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
+
+    let future_box=document.createElement('div');
+    future_box.setAttribute('id',"wb_future");
 
     weatherList=jsObject.list;
     weatherList=weatherList.filter(element => element.dt_txt.includes("12:00:00"));
@@ -57,9 +63,10 @@ fetch(apiURLweather)
 
     let future_temp = document.createElement('p');
     future_temp.textContent = Math.round(weatherList[target_date].main.temp)+String.fromCharCode(176)+" F";
-    weather_card.append(future_header);
-    weather_card.append(future_image);
-    weather_card.append(future_temp);
+    future_box.append(future_header);
+    future_box.append(future_image);
+    future_box.append(future_temp);
+    weather_card.append(future_box);
 
 
 });

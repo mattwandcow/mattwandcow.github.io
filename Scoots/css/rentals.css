@@ -5,6 +5,7 @@ div .hide{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .card_head:hover{
@@ -29,3 +30,21 @@ section h2,h3{
       width: 100%;
       border-bottom: 4px dotted #eddea4;
   }
+  /*Medium View*/
+  /*#region*/
+  @media (min-width: 500px){
+    section{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section h2,h3{
+        text-align:center;
+    }
+    table{
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+  /*#endregion*/

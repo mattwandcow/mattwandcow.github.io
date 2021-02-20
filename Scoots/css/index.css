@@ -1,78 +1,103 @@
-#hero_img{
+  /*Hero*/
+  /*#region*/
+  #hero_img{
     display: block;
-margin-left: auto;
-margin-right: auto;
-}
-#action_call{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*#endregion*/
+
+    /*Action Call*/
+  /*#region*/
+  #action_call{
     display: block;
     width: 310px;
     background-color: #eddea4;
     margin-left: auto;
     margin-right: auto;
     padding: 7px;
-}
-#action_call a{
-text-decoration: none;
-}
-#action_call button{
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 25px;
-}
+  }
+  #action_call a{
+    text-decoration: none;
+  }
+  #action_call button{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+  }
+  /*#endregion*/
 
-#weather_box{
+    /*Weather*/
+  /*#region*/
+  #weather_box{
     margin-top:10px;
       background-color: #00e4ce;
       display: flex;
       flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
+      flex-wrap: wrap;
+      text-align: center;
       justify-content: space-around;
-  }
-#weather_box h2{
-    margin-top: 0px;
-    padding: 5px;
-    background-color: #1ddeff;
+    }
+    #weather_box h2{
+      margin-top: 0px;
+      padding: 5px;
+      background-color: #1ddeff;
       width: 100%;
       border-bottom: 4px dotted #eddea4;
-  }
-  
-#weather_box p{
-     font-size: 1.4em;
-  }
-#weather_box .wide{
-     font-size: 1.1em;
-  }
-
+    }
+    
+    #weather_box p{
+      font-size: 1.4em;
+    }
+    #weather_box .wide{
+      font-size: 1.1em;
+    }
+    /*#endregion*/
+    
+      /*Section*/
+  /*#region*/
   section{
     background-color: #00e4ce;
     padding-bottom: 5px;
     margin-bottom: 5px;
-}
-section h2{
+  }
+  section h2{
     margin-top: 0px;
     padding: 5px;
     background-color: #1ddeff;
-      width: 100%;
-      border-bottom: 4px dotted #eddea4;
+    width: 100%;
+    border-bottom: 4px dotted #eddea4;
   }
   section h3{
-      text-align: center;
-      margin-top: 10px;
-      padding-bottom: 5px;
-      border-bottom: 4px dotted #eddea4;
-      background-color: #1ddeff;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 4px dotted #eddea4;
+    background-color: #1ddeff;
   }
   section a{
     color: black;
     text-decoration: none;
     font-size: 1.05em;
-      font-weight: bold;
+    font-weight: bold;
   }
-section a:hover{
+  section a:hover{
     font-size: 1.15em;
-}
+  }
+  /*#endregion*/
 
+  /*Medium View*/
+  /*#region*/
+  @media (min-width: 500px){
+    /*Weather*/
+    /*#region*/
+      
+    /*#endregion*/
+        section h2{
+          text-align:center;
+      }  
+      }
+    /*#endregion*/

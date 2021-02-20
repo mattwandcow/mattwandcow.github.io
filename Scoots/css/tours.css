@@ -1,5 +1,7 @@
-section{
-    background-color: #00e4ce;
+  /*Sections*/
+  /*#region*/
+  section{
+      background-color: #00e4ce;
 }
 section p{
     margin-left: 10px;
@@ -10,11 +12,45 @@ section h2,h3{
     margin-top: 0px;
     padding: 5px;
     background-color: #1ddeff;
-      width: 100%;
-      border-bottom: 4px dotted #eddea4;
-  }
+    width: 100%;
+    border-bottom: 4px dotted #eddea4;
+}
 section img{
     display: block;
     margin-left: auto;
     margin-left: auto;
 }
+/*#endregion*/
+  /*Medium View*/
+  /*#region*/
+  @media (min-width: 500px){
+    section{
+        display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding-bottom: 10px;
+    }
+    section h2,h3{
+      width: 100%;
+      text-align: center;
+    }
+    section img{
+      width: 45%;
+      margin-right: auto;
+    }
+    section p{
+      width: 45%;
+      padding-right: 5px;
+    }
+    section:nth-child(3)
+    {
+      flex-direction: row-reverse;
+    }
+  section:nth-child(3)   img {
+      flex-direction: row-reverse;
+    border-right: none;
+      padding-left: 5px;
+    }
+    
+}
+  /*#endregion*/

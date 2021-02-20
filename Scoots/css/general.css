@@ -35,7 +35,9 @@ nav
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
+.active{
+    font-weight: bold;
+}
 .hide li {
     display: none;
 }
@@ -59,6 +61,7 @@ footer{
     background-color: #eddea4;
     border-top: 4px dotted #00e4ce;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 footer a{
@@ -75,7 +78,38 @@ footer a:hover{
 
 
 
-/*nav*/
+/*Medium View Nav*/
 /*#region*/
-
+@media (min-width: 500px){
+    .hide li {
+      display: block;
+  }
+  
+  .hide li:first-child {
+      display: none;
+      margin-left: 0px;
+  }
+  #menu_list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row;
+  }
+  #menu_list li {
+    display: block;
+  }
+  #menu_list li:first-child {
+    display: none;
+  }
+  .hide li {
+      display: none;
+  }
+  
+  .hide li:first-child {
+      display: block;
+      margin-left: 0px;
+  }
+  #scoots-logo{
+      margin-top: 10px;
+  }
+  }
 /*#endregion*/

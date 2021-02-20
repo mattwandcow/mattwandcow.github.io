@@ -1,10 +1,16 @@
-iframe{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-form{
-    margin: 10px;
+  /*Map*/
+  /*#region*/
+  iframe{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  /*#endregion*/
+  
+  /*Form*/
+  /*#region*/
+  form{
+      margin: 10px;
 }
 form label{
     display: block;
@@ -25,21 +31,47 @@ fieldset{
     margin-left: auto;
     margin-right: auto;
 }
-section{
-    background-color: #00e4ce;
-    margin-bottom: 7px;
-    padding-bottom: 7px;
-}
-section p{
-    padding-right: 7px;
-    padding-left: 7px;
-}
-section h2{
-    margin-top: 0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #1ddeff;
-      width: 100%;
-      border-bottom: 4px dotted #eddea4;
-      text-align: center;
+/*#endregion*/
+  /*section*/
+  /*#region*/
+  section{
+      background-color: #00e4ce;
+      margin-bottom: 7px;
+      padding-bottom: 7px;
   }
+  section p{
+      padding-right: 7px;
+      padding-left: 7px;
+  }
+  section h2{
+      margin-top: 0px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #1ddeff;
+        width: 100%;
+        border-bottom: 4px dotted #eddea4;
+        text-align: center;
+    }
+  /*#endregion*/
+
+  /*Medium View*/
+  /*#region*/
+  @media (min-width: 500px){
+    section{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section h2,h3{
+        text-align:center;
+    }
+        section p{
+          
+        padding-left:15px;
+        padding-right:10px;
+        }
+        form{
+          padding-bottom: 10px;
+        }
+      }
+  /*#endregion*/
