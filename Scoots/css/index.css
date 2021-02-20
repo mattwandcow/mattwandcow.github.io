@@ -92,12 +92,54 @@
   /*Medium View*/
   /*#region*/
   @media (min-width: 500px){
-    /*Weather*/
+    /*Action*/
     /*#region*/
-      
+    #action_call{
+      position: relative;
+      border-radius: 25px;
+      background-color: rgba(237, 222, 164, .9);
+      padding: 10px;
+      top: -100px;
+      margin-bottom: -100px;
+      left: -17%;
+    }
     /*#endregion*/
+    
+        /*Weather*/
+    /*#region*/
+    #weather_box{
+      background-color: #1ddeff;
+    }
+    #wb_future,#wb_today{
+    background-color: #00e4ce;
+      
+    }
+        #weather_box h2{
+          width: 100%;
+          padding-right: 0px;
+          padding-left: 0px;
+    }
+    /*#endregion*/
+
+      /*Section*/
+  /*#region*/
+    section{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around
+    }
+    section>p:last-child{
+      padding-top: 7px;
+    border-top: 4px dotted #eddea4;
+    }
         section h2{
           text-align:center;
+          width: 100%;
       }  
-      }
+    #rental_box_scooters,#rental_box_atv,#rental_box_jeep{
+      width: 30%
+    }
     /*#endregion*/
+      }
+    
+      /*#endregion*/

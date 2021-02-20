@@ -21,7 +21,7 @@ fetch(apiURLweather)
     today_temp.textContent = Math.round(jsObject.main.temp)+String.fromCharCode(176)+" F";
     
     let today_hum = document.createElement('p');
-    today_hum.textContent = Math.round(jsObject.main.humidity)+"%";
+    today_hum.textContent = "Humidity: "+Math.round(jsObject.main.humidity)+"%";
     
     let today_con = document.createElement('p');
     today_con.textContent = "Current Weather: "+jsObject.weather[0].description;
