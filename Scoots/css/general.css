@@ -60,6 +60,16 @@ footer{
     border-top: 4px dotted #00e4ce;
     text-align: center;
 }
+
+footer a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover{
+    font-size: 1.15em;
+}
+
 /*#endregion*/
 
 
